@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Πλατφόρμα Εμβολιασμού</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./static/css/home.css" type="text/css">
+        <link rel="stylesheet" href="./static/css/instructions2.css" type="text/css">
+    </head>
+    <body>
+        <div id="myContainer">
+            <div id="header" class="contentCenterY">
+                <div>
+                    <a href="#">
+                        <img class="responsiveImg" src="./static/resources/logo.png" alt="Syringe Logo">
+                    </a>
+                </div>
+                <div class="contentCenterX">
+                    <p>
+                        <span>Πλατφόρμα Εμβολιασμού </span>
+                        <br/>
+                        Υπουργείο Υγείας
+                    </p>
+
+                </div>
+                <div class="contentCenterY justifyContentEnd">
+                    <a href="login.html" class="btn sky">Είσοδος / Εγγραφή</a>
+                </div>
+
+            </div>
+
+            <div id="nav">
+                <nav class="sidebar">
+                    <!-- https://bootstrap-menu.com/detail-sidebar-nav.html -->
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="home.html"> Αρχική Σελίδα </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="locations.html"> Εμβολιαστικά Κέντρα </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="instructions.html"> Οδηγίες Εμβολιασμού </a>
+                        </li>
+                        <li class="nav-item current">
+                            <a class="nav-link" href="instructions2.html"> Οδηγίες εγγραφής / εισόδου </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="announcements.html"> Ανακοινώσεις </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div id="content">
+                <h1>Οδηγίες εγγραφής στην πλατφόρμα</h1>
+                <p>
+                    Στη σελίδα αυτή θα πρέπει να παρέχεται μια λίστα σχετικά με τα πεδία που ο χρήστης
+                    θα κληθεί να συμπληρώσει κατά τη διαδικασία<br>εγγραφή. Η λίστα θα πρέπει να δίνεται
+                    με τη μορφή bullets και σε κάθε πεδίο θα αναφέρεται αν είναι υποχρεωτική ή όχι<br>
+                    η συμπλήρωση του.
+                </p>
+                <span>
+                    Πεδία που ο χρήστης καλείται να συμπληρώσει κατά την εγγραφή:
+                </span>
+                <ul class="orderedList">
+                    <li>Όνομα (Υποχρεωτικό)</li>
+                    <li>Επώνυμο (Υποχρεωτικό)</li>
+                    <li>Α.Μ.Κ.Α (Υποχρεωτικό)</li>
+                    <li>Α.Φ.Μ. (Υποχρεωτικό)</li>
+                    <li>Αριθμός ταυτότητας (Υποχρεωτικό)</li>
+                    <li>Ηλικία (Υποχρεωτικό)</li>
+                    <li>Φύλο</li>
+                    <li>Email</li>
+                    <li>Κινητό τηλέφωνο (Υποχρεωτικό)</li>
+                </ul>
+                
+                <h1>Οδηγίες εισόδου στην πλατφόρμα</h1>
+                <p>
+                    Πληροφορίες σχετικά με τα πεδία που καλείται ο χρήστης να συμπληρώσει (
+                    αφού έχει προηγηθεί η εγγραφή του) για την εισόδο του<br>στην πλατφόρμα.
+                    Τα πεδία θα πρέπει και εδώ να εμφανίζονται με τη μορφή λίστας/bullets και
+                    να είναι τα παρακάτω:
+                </p>
+                <ul class="orderedList">
+                    <li>Α.Μ.Κ.Α (Υποχρεωτικό)</li>
+                    <li>Α.Φ.Μ. (Υποχρεωτικό)</li>
+                </ul>
+                <div class="contentCenterY">
+                    <a href="login.html" class="btn sky">Είσοδος / Εγγραφή</a>
+                </div>
+                
+ 
+            </div>
+
+            <div id="footer" class="">
+                <a target="_blank" href="./static/pdf/terms.pdf">Όροι χρήσης</a>&nbsp;<span>|</span>&nbsp;<a target="_blank" href="./static/pdf/policy.pdf">Πολιτική απορρήτου</a>
+            </div>
+        </div>
+    </body>
+</html>

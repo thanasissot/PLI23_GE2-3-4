@@ -1,0 +1,16 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : Dec 31, 2021, 7:29:19 PM
+    Author     : thana
+*/
+
+.orderedList {
+    margin-left: 30px;
+}
+
+.orderedList:focus > li, .orderedList:hover > li {
+    background: white!important;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Πλατφόρμα Εμβολιασμού</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./static/css/home.css" type="text/css">
+    </head>
+    <body>
+        <div id="myContainer">
+            <div id="header" class="contentCenterY">
+                <div>
+                    <a href="#">
+                        <img class="responsiveImg" src="./static/resources/logo.png" alt="Syringe Logo">
+                    </a>
+                </div>
+                <div class="contentCenterX">
+                    <p>
+                        <span>Πλατφόρμα Εμβολιασμού </span>
+                        <br/>
+                        Υπουργείο Υγείας
+                    </p>
+
+                </div>
+                <div class="contentCenterY justifyContentEnd">
+                    <a href="login.html" class="btn sky">Είσοδος / Εγγραφή</a>
+                </div>
+
+            </div>
+
+            <div id="nav">
+                <nav class="sidebar">
+                    <!-- https://bootstrap-menu.com/detail-sidebar-nav.html -->
+                    <ul class="nav flex-column">
+                        <li class="nav-item current">
+                            <a class="nav-link" href="home.html"> Αρχική Σελίδα </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="locations.html"> Εμβολιαστικά Κέντρα </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="instructions.html"> Οδηγίες Εμβολιασμού </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="instructions2.html"> Οδηγίες εγγραφής / εισόδου </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="announcements.html"> Ανακοινώσεις </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div id="content">
+
+                <h1>Τελευταίες ανακοινώσεις</h1>
+                <br>
+                <h3>Ημερομηνια ανακοίνωσης 1 - πιο πρόσφατης ανακοίνωσης</h3>
+                <h2><a target="_blank" href="./static/announcements_/first.html">Τιτλος ανακοίνωσης 1</a></h2>
+                <br>
+                <h3>Ημερομηνια ανακοίνωσης 2 - 2ης πιο πρόσφατης ανακοίνωσης</h3>
+                <h2><a target="_blank" href="./static/announcements_/second.html">Τιτλος ανακοίνωσης 2</a></h2>
+                <br>
+                <h3>Ημερομηνια ανακοίνωσης 3 - 3ης πιο πρόσφατης ανακοίνωσης</h3>
+                <h2><a target="_blank" href="./static/announcements_/third.html">Τιτλος ανακοίνωσης 3</a></h2>
+                <br>
+                <a href="announcements.html" class="btn sky marginLeft300">ΔΕΙΤΕ ΟΛΕΣ ΤΙΣ ΑΝΑΚΟΙΝΩΣΕΙΣ</a>
+                <br>
+                <br>
+                <h1>Εκστρατεια εμβολιασμού</h1>
+                <p>Ένα μικρό κείμενο σχετικά με την ανάγκη εμβολιασμού</p>
+                <br>
+                
+            </div>
+
+            <div id="footer" class="">
+                <a target="_blank" href="./static/pdf/terms.pdf">Όροι χρήσης</a>&nbsp;<span>|</span>&nbsp;<a target="_blank" href="./static/pdf/policy.pdf">Πολιτική απορρήτου</a>
+            </div>
+        </div>
+    </body>
+</html>

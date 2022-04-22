@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Πλατφόρμα Εμβολιασμού</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./static/css/home.css" type="text/css">
+        <link rel="stylesheet" href="./static/css/locations.css" type="text/css">
+    </head>
+    <body>
+        <div id="myContainer">
+            <div id="header" class="contentCenterY">
+                <div>
+                    <a href="#">
+                        <img class="responsiveImg" src="./static/resources/logo.png" alt="Syringe Logo">
+                    </a>
+                </div>
+                <div class="contentCenterX">
+                    <p>
+                        <span>Πλατφόρμα Εμβολιασμού </span>
+                        <br/>
+                        Υπουργείο Υγείας
+                    </p>
+
+                </div>
+                <div class="contentCenterY justifyContentEnd">
+                    <a href="login.html" class="btn sky">Είσοδος / Εγγραφή</a>
+                </div>
+
+            </div>
+
+            <div id="nav">
+                <nav class="sidebar">
+                    <!-- https://bootstrap-menu.com/detail-sidebar-nav.html -->
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="home.html"> Αρχική Σελίδα </a>
+                        </li>
+                        <li class="nav-item current">
+                            <a class="nav-link" href="locations.html"> Εμβολιαστικά Κέντρα </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="instructions.html"> Οδηγίες Εμβολιασμού </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="instructions2.html"> Οδηγίες εγγραφής / εισόδου </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="announcements.html"> Ανακοινώσεις </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div id="content">
+                <div class="boxA">
+                    <h1>Εμβολιαστικό Κέντρο Αθήνας</h1>
+                    <ul class="list">
+                        <li><strong>Διευθυνση</strong>: Οδός και αριθμός</li>
+                        <li><strong>Τ.Κ.</strong>: Ταχυδρομικός Κώδικας</li>
+                        <li><strong>Τηλέφωνο</strong>: Αριθμός Τηλεφωνού</li>
+                    </ul>
+                    <div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100621.22936695188!2d23.66829933952863!3d37.990816432734675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd1f067043f1%3A0x2736354576668ddd!2sAthens!5e0!3m2!1sen!2sgr!4v1640955493307!5m2!1sen!2sgr" width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+
+                </div>
+                <div class="boxB">
+                    <h1>Εμβολιαστικό Κέντρο Θεσσαλονίκης</h1>
+                    <ul class="list">
+                        <li><strong>Διευθυνση</strong>: Οδός και αριθμός</li>
+                        <li><strong>Τ.Κ.</strong>: Ταχυδρομικός Κώδικας</li>
+                        <li><strong>Τηλέφωνο</strong>: Αριθμός Τηλεφωνού</li>
+                    </ul>
+                    <div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24223.08953870067!2d22.938902745188052!3d40.63239174805739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a838f41428e0ed%3A0x9bae715b8d574a9!2sThessaloniki!5e0!3m2!1sen!2sgr!4v1640955522640!5m2!1sen!2sgr" width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div id="footer" class="">
+                <a target="_blank" href="./static/pdf/terms.pdf">Όροι χρήσης</a>&nbsp;<span>|</span>&nbsp;<a target="_blank" href="./static/pdf/policy.pdf">Πολιτική απορρήτου</a>
+            </div>
+        </div>
+    </body>
+</html>

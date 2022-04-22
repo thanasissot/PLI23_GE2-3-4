@@ -1,0 +1,54 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : Dec 31, 2021, 8:51:30 PM
+    Author     : thana
+*/
+
+#content {
+    display : grid;
+    padding: 0;
+    grid-template-columns: 1fr 1fr;
+}
+
+#content > div {
+    padding: 0px 25px;
+    padding-bottom: 50px;
+}
+
+#content > :first-child{
+    border-right: 2px solid black;
+}
+
+h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    white-space: nowrap;
+}
+
+
+.form1 {
+    border: 1px solid red;
+    max-width: 100%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+.centerButton {
+    display: flex;
+    justify-content: center;
+}
+
+.form-group.row {
+    display: flex;
+    justify-content: center;
+}
+
+.form-group.row > label {
+    margin-right: 40px;
+}
