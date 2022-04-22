@@ -1,0 +1,48 @@
+.mytable1, .mytable2 {
+     display: grid;
+     grid-template-columns: 1fr 1fr; 
+     max-width: 580px;
+}
+
+.between { 
+     max-width: 580px;
+}
+
+
+.mytable1 > div {
+   background: powderblue;
+   font-weight: 700;
+   font-size: 1.1em;
+   margin: 5px;
+   padding: 12px;
+   border-radius: 8px;
+   display: block;
+   text-align: center;
+   line-height: 28px;
+}
+
+.mytable2 > div {
+   height: 280px;
+   font-weight: 700;
+   font-size: 1.3em;
+   border-radius: 8px;
+   margin: 5px;
+   background: #d9ffb3;
+   padding: 12px;
+   text-decoration: none;
+   color: #blue;
+   text-align: center;
+   line-height: 200px;
+}
+
+.notCompleted {
+   background: #99ff33 !important;
+   text-align: left !important;
+   line-height: initial !important;
+}
+
+.completed {
+   background: #ffa64d !important;
+   text-align: left !important;
+   line-height: initial !important;
+}

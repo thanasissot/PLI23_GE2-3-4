@@ -1,0 +1,84 @@
+<script>
+	setActiveClass(1);
+</script>
+<!-- Η δεύτερη στήλη καταλαμβάνει 82% -->
+<!-- Εδώ θέλουμε να φαίνεται η διαχωριστική γραμμή ανάμεσα στα κελιά - border μαύρο συμπαγές-->
+<td style="width: 82%; border: 1px solid black;"> 
+	
+	<!-- Μέσα στη δεξιά στήλη εισάγουμε έναν πίνακα 1x2 που καταλαμβάνει πλήρως το κελί -->
+	<!-- Ρυθμίζουμε το περιθώριο μηδέν, αφού το πίνακα τον θέλουμε μόνο για να χωρίσουμε το κελί στα 2 -->
+	<table style="width:100% ; height: 100%; border: 0px; " >
+		<tr>
+			
+			<!-- Η πρώτη στήλη καταλαμβάνει 50% πλάτος με στοίχιση προς τα πάνω-->
+			<td style="width: 50%; height: 100%; vertical-align: top;">
+				
+				<!-- Ο τίτλος κεντραρισμένος με h1 όπως ζητείται -->
+				<!-- Μηδενίζουμε το κάτω pudding και margin για να μην απέχει πάρα πολύ από τα παρακάτω -->
+				<h1 style="text-align: center; padding-bottom: 0px; margin-bottom: 0px;" > Εμβολιαστικό κέντρο Αθήνας </h1>
+				
+				<!-- Οι πληροφορίες του κέντρου σε p tag με ρύθμιση μεγέθους γραμματοσειράς -->
+				<!-- padding για απόσταση από border και χωρίς margin προς τα πάνω  -->
+				<!-- Κάθε στοιχείο σε νέα γραμμή και η περιγραφή του με bold -->
+				<p style="font-size: 21px; padding: 12px; margin-top: 0px; " >
+					<br>
+					<b>Διεύθυνση: </b> Λεωφ. Κηφισίας 39, Μαρούσι
+					<br>
+					<b>T.K.: </b> 151 23 
+					<br>
+					<b>Τηλέφωνο: </b> +30 213-216-1000
+				</p>
+				
+				<br>
+				
+				<div style="text-align: center">  <!-- μέσα σε div για κεντράρισμα -->
+					<!-- Μόνο το iframe από το κώδικα του google-map-generator χωρίς τα ανούσια tags -->
+					<!-- και αντικατάσταση όλων των attributes μορφοποίησης με css. Το border αλλάχθηκε σε 1 και το id αφαιρέθηκε -->
+					<!-- 500Χ500 όπως ζητείται και margin 12px δεξια-αριστερά για να μη κολλάει στα περιθώρια του πίνακα όταν μικραίνει το παράθυρο -->
+					<iframe style="border: 1px solid black; margin: 0px 12px 0px 12px; width: 500px; height: 500px; overflow: hidden;"  src="https://maps.google.com/maps?q=%CE%9B%CE%B5%CF%89%CF%86.%20%CE%9A%CE%B7%CF%86%CE%B9%CF%83%CE%AF%CE%B1%CF%82%2039,%20%CE%9C%CE%B1%CF%81%CE%BF%CF%8D%CF%83%CE%B9%20151%2023&t=&z=17&ie=UTF8&iwloc=&output=embed" >
+					</iframe>
+				</div>
+				
+				<br> <br>
+				
+			</td>
+			
+			<!-- Η δεύτερη στήλη καταλαμβάνει 50% πλάτος με στοίχιση προς τα πάνω -->
+			<!-- Εδώ θέλουμε να φαίνεται η διαχωριστική γραμμή ανάμεσα στα κελιά - border μαύρο συμπαγές-->
+			<td style="width: 50%; height: 100%; border-left: 1px solid black; vertical-align: top;" >
+				
+				<!-- Ο τίτλος κεντραρισμένος με h1 όπως ζητείται -->
+				<!-- Μηδενίζουμε το κάτω pudding και margin για να μην απέχει πάρα πολύ από τα παρακάτω -->
+				<h1 style="text-align: center; padding-bottom: 0px; margin-bottom: 0px;"> Εμβολιαστικό κέντρο Θεσσαλονίκης </h1>
+				
+				<!-- Οι πληροφορίες του κέντρου σε p tag με ρύθμιση μεγέθους γραμματοσειράς -->
+				<!-- padding για απόσταση από border και χωρίς margin προς τα πάνω  -->
+				<!-- Κάθε στοιχείο σε νέα γραμμή και η περιγραφή του με bold -->
+				<p style="font-size: 21px; padding: 12px; margin-top: 0px; " >
+					<br>
+					<b>Διεύθυνση: </b> Εγνατία 154, Helexpo Περίπτερο 13, Θεσσαλονίκη
+					<br>
+					<b>T.K.: </b> 546 36
+					<br>
+					<b>Τηλέφωνο: </b> +30 2310-29-1111
+				</p>
+				
+				<br>
+				
+				<div style="text-align: center">  <!-- μέσα σε div για κεντράρισμα -->
+					<!-- Μόνο το iframe από το κώδικα του google-map-generator χωρίς τα ανούσια tags -->
+					<!-- και αντικατάσταση όλων των attributes μορφοποίησης με css. Το border αλλάχθηκε σε 1 και το id αφαιρέθηκε -->
+					<!-- 500Χ500 όπως ζητείται και margin 12px δεξια-αριστερά για να μη κολλάει στα περιθώρια του πίνακα όταν μικραίνει το παράθυρο -->
+					<iframe style="border: 1px solid black; margin: 0px 12px 0px 12px; width: 500px; height: 500px; overflow: hidden;"  src="https://maps.google.com/maps?q=%CE%A0%CE%B5%CF%81%CE%AF%CF%80%CF%84%CE%B5%CF%81%CE%BF%2013,%20%CE%98%CE%B5%CF%83%CF%83%CE%B1%CE%BB%CE%BF%CE%BD%CE%AF%CE%BA%CE%B7%20546%2021&t=&z=17&ie=UTF8&iwloc=&output=embed" >
+					</iframe>
+				</div>
+				
+				<br><br>
+				
+			</td>
+			
+			
+		</tr>
+	</table>
+	
+</td>

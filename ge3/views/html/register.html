@@ -1,0 +1,191 @@
+<script src="js/validation.js" type="text/javascript"></script><!--Έλεγχος πεδίων-->
+<!-- Η δεύτερη στήλη καταλαμβάνει 82% -->
+<!-- Εδώ θέλουμε να φαίνεται η διαχωριστική γραμμή ανάμεσα στα κελιά - border μαύρο συμπαγές-->
+<td style="width: 82%; border: 1px solid black;"> 
+
+	<!-- Μέσα στη δεξιά στήλη εισάγουμε έναν πίνακα 1x2 που καταλαμβάνει πλήρως το κελί -->
+	<!-- Ρυθμίζουμε το περιθώριο μηδέν, αφού το πίνακα τον θέλουμε μόνο για να χωρίσουμε το κελί στα 2 -->
+	<table style="width:100% ; height: 100%; border: 0px; " >
+		<tr>
+
+			<!-- Η πρώτη στήλη καταλαμβάνει 50% πλάτος με στοίχιση κέντρο και προς τα πάνω-->
+			<td style="width: 50%; height: 100%; vertical-align: top; text-align: center">
+
+				<!-- Ο τίτλος με h1 και κοντά στο πάνω περιθώριο όπως ζητείται -->
+				<h1 style="margin:0px;"> Είσοδος χρήστη </h1>
+
+				<!-- Η προτροπή χρήστη σε p tag με ρύθμιση μεγέθους γραμματοσειράς -->
+				<!-- padding για τις ζητούμενες αποστάσεις και μηδενικό margin -->
+				<p style="font-size: 21px; padding: 6px 15px 25px 15px; margin:0px" >
+					Παρακαλώ εισάγετε τον Α.Μ.Κ.Α. και τον Α.Φ.Μ. που δηλώσατε κατά την εγγραφή σας και πατήστε το κουμπί «Είσοδος»
+				</p>
+
+				<br>
+
+				<!-- Η φόρμα εισόδου με επιλογή της μεθόδου post για να μη φαίνονται τα δεδομένα -->
+				<!-- Ορίζουμε έναν πίνακα 2x2. Στη μία στήλη είναι οι τίτλοι και στην άλλη τα input -->
+
+				<form name="loginform" action="php/loginUser.php" method="post" onsubmit="return validateLogin();">
+
+					<!-- περιεχόμενα φόρμας σε div για εφαρμογή μορφοποίησης -->
+					<div class="formfield">   
+
+						<!-- Επειδή εξορισμού ο πίνακας είναι block, για να μπορέσει να κεντραριστεί και να κρατήσει και τη  --> 
+						<!-- μορφοποίηση που θέσαμε για τους πίνακες στο css θα τον ρυθμίσουμε να συμπεριφέρεται ως inline-table -->
+						<!-- margin 12px δεξια-αριστερά για να μη κολλάει στα περιθώρια του εξωτερικού πίνακα όταν μικραίνει το παράθυρο -->
+						<table style="display: inline-table; margin: 0px 12px 0px 12px;" >
+							<tr>
+								<td> Α.Μ.Κ.Α. </td>
+
+								<td>
+									<input type="text" name="amka" size="32" >
+								</td>
+							</tr> 
+
+							<tr>
+								<td> Α.Φ.Μ. </td>
+
+								<td>
+									<input type="text" name="afm" size="32" >
+								</td>
+							</tr>
+						</table>
+
+						<br><br>
+
+						<!-- Ένα button υπεύθυνο για το submit -->
+						<button type="submit" name="login" value="Είσοδος" > Είσοδος </button> 
+
+					</div>
+
+				</form>
+
+				<br><br>
+
+				<!-- Η ενημέρωση χρήστη σε p tag με ρύθμιση μεγέθους γραμματοσειράς -->
+				<!-- padding για τις ζητούμενες αποστάσεις και μηδενικό margin -->
+				<p style="font-size: 21px; padding: 6px 15px 25px 15px; margin:0px" >
+					Για την είσοδό σας, θα πρέπει να έχει προηγηθεί η εγγραφή στην πλατφόρμα 
+				</p>
+			</td>
+
+			<!-- Η δεύτερη στήλη καταλαμβάνει 50% πλάτος με στίχιση κέντρο και προς τα πάνω -->
+			<!-- Εδώ θέλουμε να φαίνεται η διαχωριστική γραμμή ανάμεσα στα κελιά - border μαύρο συμπαγές-->
+			<td style="width: 50%; height: 100%; border-left: 1px solid black; vertical-align: top; text-align: center" >
+
+				<!-- Ο τίτλος με h1 και κοντά στο πάνω περιθώριο όπως ζητείται -->
+				<h1 style="margin:0px;"> Εγγραφή χρήστη </h1>
+
+				<!-- Η προτροπή χρήστη σε p tag με ρύθμιση μεγέθους γραμματοσειράς -->
+				<!-- padding για τις ζητούμενες αποστάσεις και μηδενικό margin -->
+				<p style="font-size: 21px; padding: 6px 15px 25px 15px; margin:0px" >
+					Παρακαλώ εισάγετε όλα τα υποχρεωτικά πεδία (<b style="color:red;">*</b>) και πατήστε το κουμπί «Εγγραφή»
+				</p>
+
+				<br>
+
+				<!-- Η φόρμα εισόδου με επιλογή της μεθόδου post για να μη φαίνονται τα δεδομένα -->
+				<!-- Ορίζουμε έναν πίνακα 2x2. Στη μία στήλη είναι οι τίτλοι και στην άλλη τα input -->
+				<form name="registerform" action="php/registerUser.php" method="POST" onsubmit="return validateRegister();">
+
+					<!-- περιεχόμενα φόρμας σε div για εφαρμογή μορφοποίησης -->
+					<div class="formfield">
+
+						<!-- Επειδή εξορισμού ο πίνακας είναι block, για να μπορέσει να κεντραριστεί και να κρατήσει και τη  --> 
+						<!-- μορφοποίηση που θέσαμε για τους πίνακες στο css θα τον ρυθμίσουμε να συμπεριφέρεται ως inline-table -->
+						<!-- margin 12px δεξια-αριστερά για να μη κολλάει στα περιθώρια του εξωτερικού πίνακα όταν μικραίνει το παράθυρο -->
+						<table style="display: inline-table; margin: 0px 12px 0px 12px;" >
+							<tr>
+								<td> Όνομα<b style="color:red;">*</b> </td>
+								<td>
+									<input type="text" name="firstname" size="32"  >
+								</td>
+							</tr>
+							
+							<tr>
+								<td> Επώνυμο<b style="color:red;">*</b> </td>
+								<td>
+									<input type="text" name="lastname" size="32"  >
+								</td>
+							</tr>
+
+							<tr>
+								<td> Α.Μ.Κ.Α.<b style="color:red;">*</b> </td>
+								<td>
+									<input type="text" name="amka" size="32"  >
+								</td>
+							</tr> 
+
+							<tr>
+								<td> Α.Φ.Μ.<b style="color:red;">*</b> </td>
+								<td>
+									<input type="text" name="afm" size="32"  >
+								</td>
+							</tr>
+
+							<tr>
+								<td> Αριθμός Ταυτότητας<b style="color:red;">*</b> </td>
+								<td>
+									<input type="text" name="pid" size="32" >
+								</td>
+							</tr>
+
+							<tr>
+								<td> Ηλικία<b style="color:red;">*</b> </td>
+								<td>
+									<input type="text" name="age" size="32"  >
+								</td>
+							</tr>
+
+							<tr>
+								<td> Φύλλο </td>
+								<td>
+									<select name="gender" style="float: left; width: 160px; font-size: 1.2em;">
+										<option value="Άρρεν" selected>Άρρεν</option> <!-- Αν δεν επιλεγεί Νομός -->
+										<option value="Θύλη">Θύλη</option>
+								</td>
+							</tr>
+
+							<tr>
+								<td> Email </td>
+								<td>
+									<input type="text" name="email" size="32">
+								</td>
+							</tr>
+
+							<tr>
+								<td> Κινητό Τηλέφωνο<b style="color:red;">*</b> </td>
+								<td>
+									<input type="text" name="phone" size="32"  >
+								</td>
+							</tr>
+
+							<tr>
+								<td> Ρόλος <b style="color:red;">*</b> </td>
+								<td>
+									<select name="role" style="float: left; width: 160px; font-size: 1.2em;">
+										<option value="Πολίτης" selected>Πολίτης</option> <!-- Αν δεν επιλεγεί Νομός -->
+										<option value="Γιατρός">Γιατρός</option>
+									</td>
+								</tr>
+
+							</table>
+
+							<br><br>
+
+							<!-- Ένα button υπεύθυνο για το submit -->
+							<button type="submit" name="register" value="Εγγραφή" > Εγγραφή </button>
+
+						</div>
+
+					</form>
+
+					<br> <br>
+
+				</td>
+
+
+			</tr>
+		</table>
+
+	</td>
